@@ -5,7 +5,7 @@ class Dog
     #@breed = breed
     if breed.block_given?
       @breed = breed
-    else 
+    else
       @breed = "Mutt"
     end
   end
