@@ -2,7 +2,12 @@ class Dog
 
   def initialize(name, breed)
     @name = name
-    @breed = breed
+    #@breed = breed
+    if breed.block_given?
+      @breed = breed
+    else 
+      @breed = "Mutt"
+    end
   end
 
   def name=(name)
